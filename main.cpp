@@ -5,7 +5,7 @@ using std::endl;
 
 void sortDescending(int,int,int);
 void swap(int&,int&);
-
+//Main used to input numbers from user and call sort, then print accordingly
 int main()
 {
   int numA, numB, numC;
@@ -15,10 +15,11 @@ int main()
   sortDescending(numA, numB, numC);
   
   cout<<"From greatest to least, they are: ";
-cout<<numC<<","<<numB<<","<<numA<<endl;
+//Print in reverse order, so they are from greatest to least
+  cout<<numC<<","<<numB<<","<<numA<<endl;
 return 0;
 }
-
+//sortDescending sorts the numbers into descending order, which we will later print out in reverse to fix the output order
 void sortDescending(int first, int second, int third)
 {
 if( first < third )
@@ -34,7 +35,7 @@ if( second < first )
     swap(second,third);
   }
 }
-
+//Swaps the two given integers with eachothers values
 void swap(int &first, int &second)
 {
   int temp = first;
