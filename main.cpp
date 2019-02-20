@@ -15,21 +15,21 @@ int main()
   sortDescending(numA, numB, numC);
   
   cout<<"From greatest to least, they are: ";
-  cout<<numA<<","<<numB<<","<<numC<<endl;
-  return 0;
+cout<<numC<<","<<numB<<","<<numA<<endl;
+return 0;
 }
 
 void sortDescending(int first, int second, int third)
 {
-  if( first < third )
-  {
-    swap(first,third);
-  }
-  if( first < second )
+if( first < third )
+{
+swap(first,third);
+}
+if( second < first )
   {
     swap(first,second);
   }
-  if( second < third )
+  if( third<second )
   {
     swap(second,third);
   }
